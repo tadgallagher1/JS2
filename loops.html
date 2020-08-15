@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    
+        function testLoops(){
+            
+           /* 
+           // For Loop
+           alert("test");
+           for(var x=0; x<5; x++) {
+              alert ("x="+x);
+              if (x==3) {
+                  alert("breaking out at 3");
+                  break;
+              }
+           }
+
+           // While Loop
+           var j=0;
+           while (j < 5) {
+               alert("j=" + j);
+               j=j+1; // or j++;
+           }
+           */
+
+           // Array Example
+           /*  
+           var students = ['Tim', 'Victor', 'Rick', 'Ryan', 'Michael', 'Jim'  ];
+           
+                    
+           for (var index=0; index<students.length; index++) {
+               alert("student name=" + students[index] + " " + index);               
+           }
+          
+
+           // Another Array 
+
+           // Declare Array
+           var fruit = ['Banana', 'Orange', 'Apple', 'Mango' ];
+           // Display lenght of array
+           alert("before-fruit"+fruit.length);
+           // print contents of array
+           for (var k=0; k<fruit.length; k++) {
+               alert("fruit=>" + fruit[k] + " k=>" + k);
+           }
+           // Add element to array
+           fruit.push('Lemon');   
+           // Disply new lenght of array after new element was added         
+           alert("after-fruit"+fruit.length);
+
+           // Print out contents of array with new element
+           for (var n=0; n<fruit.length; n++) {
+               alert("fruit=>" + fruit[n] + " k=>" + n);
+           }
+
+           // Declare array
+           var fruitNew = ['Banana', 'Orange', 'Apple', 'Mango' ];
+           // Display lenght of arry
+           alert("before-fruitNew"+fruitNew.length);
+           // print contents of array
+           for (var y=0; k<fruitNew.length; y++) {
+               alert("fruitNew=>" + fruitNew[y] + " y=>" + y);
+           }
+           // Remove last element of array
+           fruitNew.pop();
+           // Display new length of array after element was removed
+           alert("after-fruitNew"+fruitNew.length);
+           // print contents of array (last element is removed)
+           for (var w=0; w<fruitNew.length; w++) {
+               alert("fruitNew=>" + fruitNew[w] + " w=>" + w);
+           }
+
+           // Declare an array with nothing in it
+           var person = [];
+           person[0] = "John";
+           person[1] = "Mary";
+           person[2] = "Scott";
+
+           alert("size of person array = " + person.length);
+
+           person.sort();
+            */
+
+           // Switch Statements
+           
+           // The getDay() method returns the weekday as a number (we didn't code every day)
+           switch (new Date().getDay()) {
+                case 0:
+                    alert("Sunday");
+                    break;
+                case 1:  
+                    alert("Monday");
+                    break;  
+                case 2:  
+                    alert("Tuesday");
+                    break;     
+                case 3:  
+                    alert("Wednesday");
+                    break;      
+                case 4:  
+                    alert("Thursday");
+                    break;    
+                default:
+                    alert ("Other");
+                    break;
+           }    
+
+
+        }
+    
+    </script>
+
+
+
+</head>
+<body>
+    <input type="button" value="Test Loops" onclick="testLoops()"> 
+</body>
+</html>

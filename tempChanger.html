@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function convertTemp(temp) {
+            // Parameter passed in
+            var tempType = temp;
+            // Initilize result
+            var myResult = "";
+            // Input parameter from UI
+            var myTemp=Number(document.getElementById("inputTemp").value);
+
+            // Test for Empty String (nothing was input)
+            if (myTemp!="" && myTemp!=null) {
+                // If it is a c to f, do this
+                if (tempType=="f") {
+                    // Calculate result for Fahrenheit
+                    myResult = myTemp * 9 / 5 + 32;
+                // Else if it is a f to c, do this    
+                } else if (tempType=="c") {
+                    // Calculate result for Celsius
+                    myResult = (myTemp - 32) * 5 / 9;
+                }
+                // Display Calculated Result
+                document.getElementById("result").innerHTML = "My result is: " + myResult;
+            } else {
+                // Else display Error Message
+                document.getElementById("result").innerHTML = "Temp is required!";
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+<h1>Temp Changer</h1>
+<br>
+    * Temperature: <input type="number" name="inputTemp"  id="inputTemp" >
+<br>
+<p id="result">
+
+</p>
+<input type="button" value="F to C" onclick="convertTemp('c')"> 
+<input type="button" value="C to F" onclick="convertTemp('f')"> 
+    
+</body>
+</html>
